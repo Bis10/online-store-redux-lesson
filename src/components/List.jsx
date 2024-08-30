@@ -13,14 +13,16 @@ const List = ()=>{
 
 
 return (
-    <div>
-        <h1>Products List</h1>
-        {products.map((product)=>(
-            <Container key={product.id}>
-                Products will be here
-                </Container>
-        ))}
-    </div>
-)};
+  <div>
+    <h1>Products List</h1>
+    {products.map((product) => (
+      <Container key={product.id}>
+        <div>{product.id}</div>
+        <div>{product.title}</div>
+        <div>{product.price}</div>
+      </Container>
+    ))}
+  </div>
+);};
 
 export default List;
