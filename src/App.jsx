@@ -22,13 +22,14 @@ function App() {
       <Button variant="warning" size="sm">
         Click me
       </Button>
-      {products.map((product)=>(
+      {products.map((product) => (
         <div key={product.id}>
-        <div>{product.id}</div>
-        <div>{product.description}</div>
+          <div>{product.id}</div>
+          <div>{product.title}</div>
+          <div>{product.price}</div>
+          <div>{product.description}</div>
         </div>
-      )
-      )}
+      ))}
     </>
   );
 }
