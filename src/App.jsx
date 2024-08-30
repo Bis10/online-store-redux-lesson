@@ -1,37 +1,19 @@
-import { Button } from "react-bootstrap";
-import { useAppDispatch, useAppSelector } from "./hooks/hooks";
-import { useEffect } from "react";
-import { fetchProducts } from "./store/productSlice";
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import List from './components/List';
+import Cart from './components/Cart';
 
-function App() {
-  
-  const products = useAppSelector((state) => state.products.products);
-  const dispatch = useAppDispatch();
-  
-  useEffect(()=>{
-    dispatch(fetchProducts())
-  }, [dispatch])
-
-
+const App = () => {
   return (
-    <>
-      <div>App will be here</div>
-      <Button variant="primary" size="lg">
-        Click me
-      </Button>
-      <Button variant="warning" size="sm">
-        Click me
-      </Button>
-      {products.map((product) => (
-        <div key={product.id}>
-          <div>{product.id}</div>
-          <div>{product.title}</div>
-          <div>{product.price}</div>
-          <div>{product.description}</div>
-        </div>
-      ))}
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<List />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;
