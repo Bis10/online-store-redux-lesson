@@ -1,13 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Button } from "react-bootstrap";
 
 function App() {
   return (
     <>
-      <div>
-App will be here
-        </div>
+      <div>App will be here</div>
+      <Button variant="primary" size="lg">
+        Click me
+      </Button>
+      <Button variant="warning" size="sm">
+        Click me
+      </Button>
     </>
   );
 }
