@@ -5,5 +5,5 @@ export const store = configureStore({
     reducer: {
         products: productsReducer,
 
-    }
-})
+    },
+});
