@@ -9,7 +9,7 @@ const StoreNavbar = () => {
         <Container>
           <Navbar.Brand>Online Store</Navbar.Brand>
           <Nav className="me-auto">
-            <Link to="/" style={{ color: "white", padding: "10px" }}>
+            <Link to="/" style={{ color: "white", padding: "10px"}}>
               Home
             </Link>
             <Link to="/cart" style={{ color: "white", padding: "10px" }}>
