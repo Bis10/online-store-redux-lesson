@@ -24,19 +24,19 @@ Built with:
    ```
 2. Navigate to the project directory:
 
-```bash
-cd online-store-redux-lesson
-```
+   ```bash
+   cd online-store-redux-lesson
+   ```
 
 3. Install the required dependencies:
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 4. Start the development server:
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 5. Visit http://localhost:5173 to view the app in your browser.
 
