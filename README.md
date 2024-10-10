@@ -1,4 +1,4 @@
-# Redux Online Store
+# Online-Store-Redux-Lesson
 
 This project is a simple online store application built using React and Redux for state management. It fetches product data from [Fake Store API](https://fakestoreapi.com/) and allows users to browse through products, add them to the cart, and simulate a shopping experience. The target audience for this project includes developers learning how to integrate Redux in a React application and users interested in basic e-commerce functionality.
 
