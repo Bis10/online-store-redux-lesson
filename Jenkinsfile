@@ -4,6 +4,12 @@ pipeline {
     tools {nodejs "node"}
     
     stages {
+        stage('Checkout') {
+            steps {
+               
+                git branch: 'main', url: 'https://github.com/bishnu-suyel/online-store-redux-lesson.git'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
@@ -11,8 +17,6 @@ pipeline {
         }
         stage('Test') {
             steps {
-              sh "pwd"
-              dir('frontend') {
               sh "pwd"
               sh 'npm install'
               }
